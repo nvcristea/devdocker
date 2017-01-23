@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    build: ../../images/alpine/webdev
+    volumes_from:
+      - container:vbase
+    ports:
+      - 80:80
+      - 443:443
